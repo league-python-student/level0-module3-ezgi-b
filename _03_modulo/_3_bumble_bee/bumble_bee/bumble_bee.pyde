@@ -1,7 +1,7 @@
 def setup():
      ellipseMode(CENTER)
      size(500, 500)
-     background(160, 160, 160)
+     background(170, 160, 170)
      draw_flower(350, 100)
 
 
@@ -13,6 +13,14 @@ def draw():
     # Then, use a loop to make a body for the Bee! 
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
+    for x in range(45):
+        if x%2 == 0:
+            fill(255, 255, 170)
+        else:
+            fill(0, 0, 0)
+        ellipse(x*10, x*10, 50, 50)
+    draw_bee_face(450, 450)
+        
     
 
 
